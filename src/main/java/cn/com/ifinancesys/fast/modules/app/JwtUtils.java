@@ -21,8 +21,15 @@ public class JwtUtils {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
+    /**
+     * 加密密钥
+     */
     private String secret;
+    /**
+     * token有效时长
+     */
     private long expire;
+
     private String header;
 
     public String generateToken(long userId) {
